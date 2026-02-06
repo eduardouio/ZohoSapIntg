@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QfMV+VzROuV1EdPzrc/cbjLnhugC7+g+XnvvRbG0m3Q=",
+  "Source": "ZohoSapIntg",
+  "BasePath": "_content/ZohoSapIntg",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
