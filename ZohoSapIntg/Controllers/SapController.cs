@@ -66,7 +66,11 @@ namespace ZohoSapIntg.Controllers
                 return BadRequest(new
                 {
                     success = false,
-                    error = ex.Message
+                    error = ex.Message,
+                    errorType = ex.GetType().FullName,
+                    hResult = ex.HResult,
+                    innerError = ex.InnerException?.Message,
+                    stackTrace = ex.StackTrace
                 });
             }
         }
