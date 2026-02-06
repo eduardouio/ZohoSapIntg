@@ -18,11 +18,12 @@ if (app.Environment.IsDevelopment())
 
 //app.UseHttpsRedirection();
 
+app.UseRouting();
+
 //app.UseAuthorization();
 
 app.MapControllers();
 
-// Ruta raíz de respaldo
 app.MapGet("/", () => "System UP Success");
 
 app.Run();
