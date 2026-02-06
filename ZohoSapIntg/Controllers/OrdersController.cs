@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using ZohoSapIntg.Common;
-using ZohoSapIntg.Models;
 
 namespace ZohoSapIntg.Controllers
 {
@@ -8,60 +6,28 @@ namespace ZohoSapIntg.Controllers
     [ApiController]
     public class OrdersController : ControllerBase
     {
-        private readonly OrderService _service = new();
-
         [HttpGet]
         public IActionResult GetAll([FromQuery] string cardCode)
         {
-            try
-            {
-                return Ok(_service.ListOrders(cardCode));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
         }
 
         [HttpGet("{docEntry}")]
         public IActionResult Get(int docEntry)
         {
-            try
-            {
-                return Ok(_service.GetOrder(docEntry));
-            }
-            catch (Exception ex)
-            {
-                return NotFound(new { error = ex.Message });
-            }
+            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] OrderDto order)
+        public IActionResult Create([FromBody] object order)
         {
-            try
-            {
-                var docEntry = _service.CreateOrder(order);
-                return CreatedAtAction(nameof(Get), new { docEntry }, new { docEntry });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
         }
 
         [HttpPut("{docEntry}")]
-        public IActionResult Update(int docEntry, [FromBody] OrderDto order)
+        public IActionResult Update(int docEntry, [FromBody] object order)
         {
-            try
-            {
-                _service.UpdateOrder(docEntry, order);
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
         }
     }
 }
