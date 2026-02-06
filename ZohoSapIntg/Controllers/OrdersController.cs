@@ -11,11 +11,11 @@ namespace ZohoSapIntg.Controllers
         private readonly OrderService _service = new();
 
         [HttpGet]
-        public IActionResult GetAll([FromQuery] string cardCode)
+        public IActionResult GetAll()
         {
             try
             {
-                return Ok(_service.ListOrders(cardCode));
+                return Ok(_service.ListOrders());
             }
             catch (Exception ex)
             {
