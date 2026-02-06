@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\ZohoSapIntg\\ZohoSapIntg\\ZohoSapIntg.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\repo\\ZohoSapIntg\\ZohoSapIntg\\ZohoSapIntg.csproj",
       "projectName": "ZohoSapIntg",
-      "projectPath": "C:\\Users\\Administrador\\source\\repos\\ZohoSapIntg\\ZohoSapIntg\\ZohoSapIntg.csproj",
+      "projectPath": "C:\\Users\\Administrador\\source\\repos\\repo\\ZohoSapIntg\\ZohoSapIntg\\ZohoSapIntg.csproj",
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\source\\repos\\ZohoSapIntg\\ZohoSapIntg\\obj\\",
+      "outputPath": "C:\\Users\\Administrador\\source\\repos\\repo\\ZohoSapIntg\\ZohoSapIntg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
