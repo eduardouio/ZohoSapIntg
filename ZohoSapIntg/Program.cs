@@ -24,6 +24,4 @@ app.UseRouting();
 
 app.MapControllers();
 
-app.MapGet("/", () => "System UP Success");
-
 app.Run();
