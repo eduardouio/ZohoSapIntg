@@ -22,4 +22,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 
+// Ruta raíz de respaldo
+app.MapGet("/", () => "System UP Success");
+
 app.Run();
