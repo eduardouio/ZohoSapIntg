@@ -12,7 +12,7 @@ namespace ZohoSapIntg.Common
             _company = new Company
             {
                 Server = "SERVIDOR_SQL",
-                DbServerType = BoDataServerTypes.dst_MSSQL2019,
+                DbServerType = BoDataServerTypes.dst_MSSQL2016,
                 CompanyDB = "TEST_VINESA",
                 UserName = "auditori",
                 Password = "1234",

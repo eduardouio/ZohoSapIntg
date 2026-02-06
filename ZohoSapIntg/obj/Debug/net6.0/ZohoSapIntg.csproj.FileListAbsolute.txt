@@ -52,3 +52,5 @@ C:\Users\Administrador\source\repos\repo\ZohoSapIntg\ZohoSapIntg\bin\Debug\net6.
 C:\Users\Administrador\source\repos\repo\ZohoSapIntg\ZohoSapIntg\bin\Debug\net6.0\ZohoSapIntg.pdb
 C:\Users\Administrador\source\repos\repo\ZohoSapIntg\ZohoSapIntg\obj\Debug\net6.0\ZohoSapIntg.genruntimeconfig.cache
 C:\Users\Administrador\source\repos\repo\ZohoSapIntg\ZohoSapIntg\obj\Debug\net6.0\ref\ZohoSapIntg.dll
+C:\Users\Administrador\source\repos\repo\ZohoSapIntg\ZohoSapIntg\obj\Debug\net6.0\Interop.SAPbobsCOM.dll
+C:\Users\Administrador\source\repos\repo\ZohoSapIntg\ZohoSapIntg\obj\Debug\net6.0\ZohoSapIntg.csproj.ResolveComReference.cache
