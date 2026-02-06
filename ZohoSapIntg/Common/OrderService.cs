@@ -23,7 +23,7 @@ namespace ZohoSapIntg.Common
                 oOrder.Lines.ItemCode = line.ItemCode;
                 oOrder.Lines.Quantity = (double)line.Quantity;
                 oOrder.Lines.Price = (double)line.Price;
-                oOrder.Lines.WhsCode = line.WhsCode;
+                oOrder.Lines.WarehouseCode = line.WhsCode;
                 oOrder.Lines.Add();
             }
 
