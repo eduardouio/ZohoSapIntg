@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using ZohoSapIntg.Common;
+using ZohoSapIntg.Models;
 
 namespace ZohoSapIntg.Controllers
 {
@@ -6,28 +8,60 @@ namespace ZohoSapIntg.Controllers
     [ApiController]
     public class OrdersController : ControllerBase
     {
+        private readonly OrderService _service = new();
+
         [HttpGet]
         public IActionResult GetAll([FromQuery] string cardCode)
         {
-            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
+            try
+            {
+                return Ok(_service.ListOrders(cardCode));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
 
         [HttpGet("{docEntry}")]
         public IActionResult Get(int docEntry)
         {
-            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
+            try
+            {
+                return Ok(_service.GetOrder(docEntry));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { error = ex.Message });
+            }
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] object order)
+        public IActionResult Create([FromBody] OrderDto order)
         {
-            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
+            try
+            {
+                var docEntry = _service.CreateOrder(order);
+                return CreatedAtAction(nameof(Get), new { docEntry }, new { docEntry });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
 
         [HttpPut("{docEntry}")]
-        public IActionResult Update(int docEntry, [FromBody] object order)
+        public IActionResult Update(int docEntry, [FromBody] OrderDto order)
         {
-            return Ok(new { message = "Orders API - SAP deshabilitado temporalmente" });
+            try
+            {
+                _service.UpdateOrder(docEntry, order);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
     }
 }
